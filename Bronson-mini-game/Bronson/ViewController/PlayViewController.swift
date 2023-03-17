@@ -47,20 +47,16 @@ class PlayViewController: UIViewController, PlayViewControllerDelegate {
 
     @objc func didTapButton() {
         let tabBarVC = UITabBarController()
-        tabBarVC.delegate = self
         let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
         let vc1 = UINavigationController(rootViewController: MainViewController())
-        let vc2 = UINavigationController(rootViewController: SwipingController(collectionViewLayout: layout))
-        let vc3 = UINavigationController(rootViewController: AboutUsViewController())
+
 
 
         vc1.title = "Play"
-        vc2.title = "Help"
-        vc3.title = "About"
 
 
-        tabBarVC.setViewControllers([vc1, vc2, vc3], animated: false)
+
+        tabBarVC.setViewControllers([vc1], animated: false)
         
         guard let items = tabBarVC.tabBar.items else {
             return

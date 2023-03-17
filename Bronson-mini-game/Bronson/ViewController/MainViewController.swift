@@ -1,6 +1,6 @@
 import UIKit
 
-class MainViewController: UIViewController, NibLoadable, EndStateDelegate {
+class MainViewController: UIViewController, NibLoadable {
 
 
     @IBOutlet weak var containerStackView: UIStackView!
@@ -14,12 +14,6 @@ class MainViewController: UIViewController, NibLoadable, EndStateDelegate {
     var divisor: CGFloat?
     var cards = CardInfo.startingData()
     var delegate: PlayViewControllerDelegate?
-    var points  = 0
-    var answers: [AnswerText] = []
-    private func updatePoints() {
-        points += 1
-        navigationItem.rightBarButtonItem?.title = "\(points)/20"
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,7 +62,7 @@ class MainViewController: UIViewController, NibLoadable, EndStateDelegate {
     func addCardView() {
         guard let cardView = createCardView(with: 0)
         else { return }
-        containerStackView.removeAll()
+
         containerStackView.addArrangedSubview(cardView)
         let panGuesture = UIPanGestureRecognizer(target: self, action: #selector(panCard(_:)))
         containerStackView.addGestureRecognizer(panGuesture)
@@ -77,7 +71,7 @@ class MainViewController: UIViewController, NibLoadable, EndStateDelegate {
     func addCardView2() {
         guard let cardView = createCardView(with: 1)
         else { return }
-        container2.removeAll()
+
         container2.addArrangedSubview(cardView)
         let panGuesture = UIPanGestureRecognizer(target: self, action: #selector(panCard2(_:)))
         container2.addGestureRecognizer(panGuesture)
@@ -104,14 +98,6 @@ class MainViewController: UIViewController, NibLoadable, EndStateDelegate {
             if let cardView = createCardView(with: 1) {
                 container.addArrangedSubview(cardView)
             }
-        } else if cards.count > 0 {
-
-        } else {
-            let endStateVC = EndStateViewController()
-            endStateVC.delegate = self
-            endStateVC.answers = answers
-            endStateVC.modalPresentationStyle = .fullScreen
-            present(endStateVC, animated: true , completion: nil)
         }
     }
     
@@ -121,7 +107,7 @@ class MainViewController: UIViewController, NibLoadable, EndStateDelegate {
         addCardView2()
         card.alpha = 1
         card2.alpha = 1
-        answers.removeAll()
+
 
     }
 
@@ -168,10 +154,7 @@ class MainViewController: UIViewController, NibLoadable, EndStateDelegate {
 
     func moveOffToRight(_ card: UIView, completion: @escaping () -> ()) {
         if cards[0].isCorrect {
-            delegate?.updatePoints()
-            if let answer = cards.first?.answer {
-                answers.append(answer)
-            }
+
         }
         UIView.animate(withDuration: 0.3, animations: {
             card.center = CGPoint(x: card.center.x + 200, y: card.center.y)
@@ -184,11 +167,6 @@ class MainViewController: UIViewController, NibLoadable, EndStateDelegate {
     func moveOffToLeft(_ card: UIView, completion: @escaping () -> ()) {
         if cards[0].isCorrect {
 
-        } else {
-            delegate?.updatePoints()
-            if let answer = cards.first?.answer {
-                answers.append(answer)
-            }
         }
 
         UIView.animate(withDuration: 0.3, animations: {
