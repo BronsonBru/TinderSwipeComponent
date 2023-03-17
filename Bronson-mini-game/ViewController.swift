@@ -11,9 +11,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        MainViewController(nibName: <#T##String?#>, bundle: <#T##Bundle?#>)
+        view.backgroundColor = .red
+        
     }
-
-
 }
 

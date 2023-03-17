@@ -13,17 +13,14 @@ class MainViewController: UIViewController, NibLoadable {
     var orginalCardPosition: CGPoint?
     var divisor: CGFloat?
     var cards = CardInfo.startingData()
-    var delegate: PlayViewControllerDelegate?
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = L10n.Tabs.Tab1.title
         loadViewIfNeeded()
         divisor = (view.frame.width / 2) / 0.51
         addCardView()
         addCardView2()
-        navigationController?.navigationBar.tintColor = .label
-        configureBarButtonItems()
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -31,16 +28,6 @@ class MainViewController: UIViewController, NibLoadable {
         orginalCardPosition = card.center
         greenCheck.layer.cornerRadius = 25
         greenCheck2.layer.cornerRadius = 25
-    }
-
-    func configureBarButtonItems() {
-        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .close , target: self, action: #selector(dismissSelf))
-
-//        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "\(points)/20", style: .plain, target: self, action: nil)
-    }
-
-    @objc private func dismissSelf() {
-        dismiss(animated: true, completion: nil)
     }
 
     private func updateCardView(_ cardView: CardView, with index: Int) {
@@ -100,16 +87,6 @@ class MainViewController: UIViewController, NibLoadable {
             }
         }
     }
-    
-    func resetGame() {
-        cards = CardInfo.startingData()
-        addCardView()
-        addCardView2()
-        card.alpha = 1
-        card2.alpha = 1
-
-
-    }
 
     func changeImageColour() {
         let xFromCenter = card.center.x - view.center.x
@@ -153,9 +130,6 @@ class MainViewController: UIViewController, NibLoadable {
     }
 
     func moveOffToRight(_ card: UIView, completion: @escaping () -> ()) {
-        if cards[0].isCorrect {
-
-        }
         UIView.animate(withDuration: 0.3, animations: {
             card.center = CGPoint(x: card.center.x + 200, y: card.center.y)
         }) { _ in
@@ -165,10 +139,6 @@ class MainViewController: UIViewController, NibLoadable {
     }
 
     func moveOffToLeft(_ card: UIView, completion: @escaping () -> ()) {
-        if cards[0].isCorrect {
-
-        }
-
         UIView.animate(withDuration: 0.3, animations: {
             card.center = CGPoint(x: card.center.x - 200, y: card.center.y)
         }) { _ in
