@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF5214DC29B0DB1300FEA484 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5214DB29B0DB1300FEA484 /* AppDelegate.swift */; };
+		CF5214DE29B0DB1300FEA484 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5214DD29B0DB1300FEA484 /* SceneDelegate.swift */; };
+		CF5214E029B0DB1300FEA484 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5214DF29B0DB1300FEA484 /* ViewController.swift */; };
+		CF5214E329B0DB1300FEA484 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF5214E129B0DB1300FEA484 /* Main.storyboard */; };
+		CF5214E529B0DB1500FEA484 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF5214E429B0DB1500FEA484 /* Assets.xcassets */; };
+		CF5214E829B0DB1500FEA484 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF5214E629B0DB1500FEA484 /* LaunchScreen.storyboard */; };
+		CF52150429B0DB2800FEA484 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5214F129B0DB2800FEA484 /* OnboardingViewController.swift */; };
+		CF52150529B0DB2800FEA484 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5214F229B0DB2800FEA484 /* PageCell.swift */; };
+		CF52150629B0DB2800FEA484 /* SwipingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5214F329B0DB2800FEA484 /* SwipingController.swift */; };
+		CF52150729B0DB2800FEA484 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5214F529B0DB2800FEA484 /* CardView.swift */; };
+		CF52150829B0DB2800FEA484 /* AboutUs.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF5214F629B0DB2800FEA484 /* AboutUs.xib */; };
+		CF52150929B0DB2800FEA484 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF5214F729B0DB2800FEA484 /* CardView.xib */; };
+		CF52150A29B0DB2800FEA484 /* PhotoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5214F929B0DB2800FEA484 /* PhotoData.swift */; };
+		CF52150B29B0DB2800FEA484 /* answerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5214FA29B0DB2800FEA484 /* answerData.swift */; };
+		CF52150C29B0DB2800FEA484 /* OnboardingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5214FB29B0DB2800FEA484 /* OnboardingData.swift */; };
+		CF52150D29B0DB2800FEA484 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF5214FD29B0DB2800FEA484 /* MainViewController.xib */; };
+		CF52150E29B0DB2800FEA484 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5214FE29B0DB2800FEA484 /* MainViewController.swift */; };
+		CF52150F29B0DB2800FEA484 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5214FF29B0DB2800FEA484 /* PlayViewController.swift */; };
+		CF52151029B0DB2800FEA484 /* EndStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52150029B0DB2800FEA484 /* EndStateViewController.swift */; };
+		CF52151129B0DB2800FEA484 /* EndStateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF52150129B0DB2800FEA484 /* EndStateViewController.xib */; };
+		CF52151229B0DB2800FEA484 /* AboutUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF52150229B0DB2800FEA484 /* AboutUsViewController.xib */; };
+		CF52151329B0DB2800FEA484 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52150329B0DB2800FEA484 /* AboutUsViewController.swift */; };
+		CF52151629B0DDBE00FEA484 /* Localizable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52151429B0DDBD00FEA484 /* Localizable.generated.swift */; };
+		CF52151729B0DDBE00FEA484 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF52151529B0DDBE00FEA484 /* Localizable.strings */; };
+		CF52151C29B0DE0400FEA484 /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52151929B0DE0400FEA484 /* TextStyle.swift */; };
+		CF52151D29B0DE0400FEA484 /* Register-Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52151A29B0DE0400FEA484 /* Register-Dequeue.swift */; };
+		CF52151E29B0DE0400FEA484 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52151B29B0DE0400FEA484 /* NibLoadable.swift */; };
+		CF52152129B0DECF00FEA484 /* Assets.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52151F29B0DECF00FEA484 /* Assets.generated.swift */; };
+		CF52152229B0DECF00FEA484 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52152029B0DECF00FEA484 /* Theme.swift */; };
+		CF52152C29B0DF1400FEA484 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52152429B0DF1400FEA484 /* UIApplication+Extension.swift */; };
+		CF52152D29B0DF1400FEA484 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52152529B0DF1400FEA484 /* Array+Extensions.swift */; };
+		CF52152E29B0DF1400FEA484 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52152629B0DF1400FEA484 /* UIViewController+Extensions.swift */; };
+		CF52152F29B0DF1400FEA484 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52152729B0DF1400FEA484 /* UIView+Extensions.swift */; };
+		CF52153029B0DF1400FEA484 /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52152829B0DF1400FEA484 /* UINavigationController+Extension.swift */; };
+		CF52153129B0DF1400FEA484 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52152929B0DF1400FEA484 /* Bundle+Extension.swift */; };
+		CF52153229B0DF1400FEA484 /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52152A29B0DF1400FEA484 /* UserDefaults+Extensions.swift */; };
+		CF52153329B0DF1400FEA484 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52152B29B0DF1400FEA484 /* UILabel+Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CF5214D829B0DB1300FEA484 /* Bronson-mini-game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bronson-mini-game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF5214DB29B0DB1300FEA484 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF5214DD29B0DB1300FEA484 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CF5214DF29B0DB1300FEA484 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF5214E229B0DB1300FEA484 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF5214E429B0DB1500FEA484 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF5214E729B0DB1500FEA484 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF5214E929B0DB1500FEA484 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF5214F129B0DB2800FEA484 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		CF5214F229B0DB2800FEA484 /* PageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
+		CF5214F329B0DB2800FEA484 /* SwipingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipingController.swift; sourceTree = "<group>"; };
+		CF5214F529B0DB2800FEA484 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		CF5214F629B0DB2800FEA484 /* AboutUs.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutUs.xib; sourceTree = "<group>"; };
+		CF5214F729B0DB2800FEA484 /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		CF5214F929B0DB2800FEA484 /* PhotoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoData.swift; sourceTree = "<group>"; };
+		CF5214FA29B0DB2800FEA484 /* answerData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = answerData.swift; sourceTree = "<group>"; };
+		CF5214FB29B0DB2800FEA484 /* OnboardingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingData.swift; sourceTree = "<group>"; };
+		CF5214FD29B0DB2800FEA484 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		CF5214FE29B0DB2800FEA484 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CF5214FF29B0DB2800FEA484 /* PlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		CF52150029B0DB2800FEA484 /* EndStateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndStateViewController.swift; sourceTree = "<group>"; };
+		CF52150129B0DB2800FEA484 /* EndStateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EndStateViewController.xib; sourceTree = "<group>"; };
+		CF52150229B0DB2800FEA484 /* AboutUsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutUsViewController.xib; sourceTree = "<group>"; };
+		CF52150329B0DB2800FEA484 /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		CF52151429B0DDBD00FEA484 /* Localizable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.generated.swift; sourceTree = "<group>"; };
+		CF52151529B0DDBE00FEA484 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		CF52151929B0DE0400FEA484 /* TextStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
+		CF52151A29B0DE0400FEA484 /* Register-Dequeue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Register-Dequeue.swift"; sourceTree = "<group>"; };
+		CF52151B29B0DE0400FEA484 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		CF52151F29B0DECF00FEA484 /* Assets.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Assets.generated.swift; path = Assets.xcassets/Assets.generated.swift; sourceTree = "<group>"; };
+		CF52152029B0DECF00FEA484 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Theme.swift; path = Assets.xcassets/Theme.swift; sourceTree = "<group>"; };
+		CF52152429B0DF1400FEA484 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		CF52152529B0DF1400FEA484 /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		CF52152629B0DF1400FEA484 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		CF52152729B0DF1400FEA484 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		CF52152829B0DF1400FEA484 /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
+		CF52152929B0DF1400FEA484 /* Bundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		CF52152A29B0DF1400FEA484 /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
+		CF52152B29B0DF1400FEA484 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF5214D529B0DB1300FEA484 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF5214CF29B0DB1300FEA484 = {
+			isa = PBXGroup;
+			children = (
+				CF5214DA29B0DB1300FEA484 /* Bronson-mini-game */,
+				CF5214D929B0DB1300FEA484 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF5214D929B0DB1300FEA484 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF5214D829B0DB1300FEA484 /* Bronson-mini-game.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF5214DA29B0DB1300FEA484 /* Bronson-mini-game */ = {
+			isa = PBXGroup;
+			children = (
+				CF5214EF29B0DB2800FEA484 /* Bronson */,
+				CF5214DB29B0DB1300FEA484 /* AppDelegate.swift */,
+				CF52151829B0DE0400FEA484 /* Utilities */,
+				CF5214DD29B0DB1300FEA484 /* SceneDelegate.swift */,
+				CF5214DF29B0DB1300FEA484 /* ViewController.swift */,
+				CF5214E129B0DB1300FEA484 /* Main.storyboard */,
+				CF52151F29B0DECF00FEA484 /* Assets.generated.swift */,
+				CF52152029B0DECF00FEA484 /* Theme.swift */,
+				CF5214E429B0DB1500FEA484 /* Assets.xcassets */,
+				CF5214E629B0DB1500FEA484 /* LaunchScreen.storyboard */,
+				CF5214E929B0DB1500FEA484 /* Info.plist */,
+			);
+			path = "Bronson-mini-game";
+			sourceTree = "<group>";
+		};
+		CF5214EF29B0DB2800FEA484 /* Bronson */ = {
+			isa = PBXGroup;
+			children = (
+				CF5214F029B0DB2800FEA484 /* swiper */,
+				CF5214F429B0DB2800FEA484 /* Card */,
+				CF5214F829B0DB2800FEA484 /* Model */,
+				CF5214FC29B0DB2800FEA484 /* ViewController */,
+			);
+			path = Bronson;
+			sourceTree = "<group>";
+		};
+		CF5214F029B0DB2800FEA484 /* swiper */ = {
+			isa = PBXGroup;
+			children = (
+				CF5214F129B0DB2800FEA484 /* OnboardingViewController.swift */,
+				CF5214F229B0DB2800FEA484 /* PageCell.swift */,
+				CF5214F329B0DB2800FEA484 /* SwipingController.swift */,
+			);
+			path = swiper;
+			sourceTree = "<group>";
+		};
+		CF5214F429B0DB2800FEA484 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				CF5214F529B0DB2800FEA484 /* CardView.swift */,
+				CF5214F629B0DB2800FEA484 /* AboutUs.xib */,
+				CF5214F729B0DB2800FEA484 /* CardView.xib */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		CF5214F829B0DB2800FEA484 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF5214F929B0DB2800FEA484 /* PhotoData.swift */,
+				CF5214FA29B0DB2800FEA484 /* answerData.swift */,
+				CF5214FB29B0DB2800FEA484 /* OnboardingData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF5214FC29B0DB2800FEA484 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CF5214FD29B0DB2800FEA484 /* MainViewController.xib */,
+				CF5214FE29B0DB2800FEA484 /* MainViewController.swift */,
+				CF5214FF29B0DB2800FEA484 /* PlayViewController.swift */,
+				CF52150029B0DB2800FEA484 /* EndStateViewController.swift */,
+				CF52150129B0DB2800FEA484 /* EndStateViewController.xib */,
+				CF52150229B0DB2800FEA484 /* AboutUsViewController.xib */,
+				CF52150329B0DB2800FEA484 /* AboutUsViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CF52151829B0DE0400FEA484 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CF52152329B0DF1400FEA484 /* Extensions */,
+				CF52151429B0DDBD00FEA484 /* Localizable.generated.swift */,
+				CF52151529B0DDBE00FEA484 /* Localizable.strings */,
+				CF52151929B0DE0400FEA484 /* TextStyle.swift */,
+				CF52151A29B0DE0400FEA484 /* Register-Dequeue.swift */,
+				CF52151B29B0DE0400FEA484 /* NibLoadable.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CF52152329B0DF1400FEA484 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CF52152429B0DF1400FEA484 /* UIApplication+Extension.swift */,
+				CF52152529B0DF1400FEA484 /* Array+Extensions.swift */,
+				CF52152629B0DF1400FEA484 /* UIViewController+Extensions.swift */,
+				CF52152729B0DF1400FEA484 /* UIView+Extensions.swift */,
+				CF52152829B0DF1400FEA484 /* UINavigationController+Extension.swift */,
+				CF52152929B0DF1400FEA484 /* Bundle+Extension.swift */,
+				CF52152A29B0DF1400FEA484 /* UserDefaults+Extensions.swift */,
+				CF52152B29B0DF1400FEA484 /* UILabel+Extensions.swift */,
+			);
+			name = Extensions;
+			path = "Bronson-mini-game/Extensions";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF5214D729B0DB1300FEA484 /* Bronson-mini-game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF5214EC29B0DB1500FEA484 /* Build configuration list for PBXNativeTarget "Bronson-mini-game" */;
+			buildPhases = (
+				CF5214D429B0DB1300FEA484 /* Sources */,
+				CF5214D529B0DB1300FEA484 /* Frameworks */,
+				CF5214D629B0DB1300FEA484 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bronson-mini-game";
+			productName = "Bronson-mini-game";
+			productReference = CF5214D829B0DB1300FEA484 /* Bronson-mini-game.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF5214D029B0DB1300FEA484 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					CF5214D729B0DB1300FEA484 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = CF5214D329B0DB1300FEA484 /* Build configuration list for PBXProject "Bronson-mini-game" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF5214CF29B0DB1300FEA484;
+			productRefGroup = CF5214D929B0DB1300FEA484 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF5214D729B0DB1300FEA484 /* Bronson-mini-game */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF5214D629B0DB1300FEA484 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF5214E829B0DB1500FEA484 /* LaunchScreen.storyboard in Resources */,
+				CF52150D29B0DB2800FEA484 /* MainViewController.xib in Resources */,
+				CF5214E529B0DB1500FEA484 /* Assets.xcassets in Resources */,
+				CF52151129B0DB2800FEA484 /* EndStateViewController.xib in Resources */,
+				CF52151729B0DDBE00FEA484 /* Localizable.strings in Resources */,
+				CF52151229B0DB2800FEA484 /* AboutUsViewController.xib in Resources */,
+				CF52150929B0DB2800FEA484 /* CardView.xib in Resources */,
+				CF5214E329B0DB1300FEA484 /* Main.storyboard in Resources */,
+				CF52150829B0DB2800FEA484 /* AboutUs.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF5214D429B0DB1300FEA484 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF52152E29B0DF1400FEA484 /* UIViewController+Extensions.swift in Sources */,
+				CF52153229B0DF1400FEA484 /* UserDefaults+Extensions.swift in Sources */,
+				CF52151C29B0DE0400FEA484 /* TextStyle.swift in Sources */,
+				CF52150729B0DB2800FEA484 /* CardView.swift in Sources */,
+				CF52153129B0DF1400FEA484 /* Bundle+Extension.swift in Sources */,
+				CF52151D29B0DE0400FEA484 /* Register-Dequeue.swift in Sources */,
+				CF52152D29B0DF1400FEA484 /* Array+Extensions.swift in Sources */,
+				CF52151E29B0DE0400FEA484 /* NibLoadable.swift in Sources */,
+				CF52152F29B0DF1400FEA484 /* UIView+Extensions.swift in Sources */,
+				CF52153029B0DF1400FEA484 /* UINavigationController+Extension.swift in Sources */,
+				CF52151029B0DB2800FEA484 /* EndStateViewController.swift in Sources */,
+				CF52150E29B0DB2800FEA484 /* MainViewController.swift in Sources */,
+				CF5214E029B0DB1300FEA484 /* ViewController.swift in Sources */,
+				CF52151329B0DB2800FEA484 /* AboutUsViewController.swift in Sources */,
+				CF52150529B0DB2800FEA484 /* PageCell.swift in Sources */,
+				CF52151629B0DDBE00FEA484 /* Localizable.generated.swift in Sources */,
+				CF52150F29B0DB2800FEA484 /* PlayViewController.swift in Sources */,
+				CF5214DC29B0DB1300FEA484 /* AppDelegate.swift in Sources */,
+				CF52150B29B0DB2800FEA484 /* answerData.swift in Sources */,
+				CF52152C29B0DF1400FEA484 /* UIApplication+Extension.swift in Sources */,
+				CF52153329B0DF1400FEA484 /* UILabel+Extensions.swift in Sources */,
+				CF5214DE29B0DB1300FEA484 /* SceneDelegate.swift in Sources */,
+				CF52150C29B0DB2800FEA484 /* OnboardingData.swift in Sources */,
+				CF52150429B0DB2800FEA484 /* OnboardingViewController.swift in Sources */,
+				CF52150A29B0DB2800FEA484 /* PhotoData.swift in Sources */,
+				CF52152229B0DECF00FEA484 /* Theme.swift in Sources */,
+				CF52150629B0DB2800FEA484 /* SwipingController.swift in Sources */,
+				CF52152129B0DECF00FEA484 /* Assets.generated.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CF5214E129B0DB1300FEA484 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF5214E229B0DB1300FEA484 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF5214E629B0DB1500FEA484 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF5214E729B0DB1500FEA484 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF5214EA29B0DB1500FEA484 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF5214EB29B0DB1500FEA484 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF5214ED29B0DB1500FEA484 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bronson-mini-game/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.glucode.Bronson-mini-game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF5214EE29B0DB1500FEA484 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bronson-mini-game/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.glucode.Bronson-mini-game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF5214D329B0DB1300FEA484 /* Build configuration list for PBXProject "Bronson-mini-game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF5214EA29B0DB1500FEA484 /* Debug */,
+				CF5214EB29B0DB1500FEA484 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF5214EC29B0DB1500FEA484 /* Build configuration list for PBXNativeTarget "Bronson-mini-game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF5214ED29B0DB1500FEA484 /* Debug */,
+				CF5214EE29B0DB1500FEA484 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF5214D029B0DB1300FEA484 /* Project object */;
+}
